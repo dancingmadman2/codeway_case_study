@@ -185,12 +185,12 @@ class HistoryDetailScreen extends GetView<HistoryDetailController> {
         content: const Text('Are you sure you want to delete this item?'),
         actions: [
           TextButton(
-            onPressed: () => Navigator.pop(ctx),
+            onPressed: () => Get.back(),
             child: const Text('Cancel'),
           ),
           TextButton(
             onPressed: () {
-              Navigator.pop(ctx);
+              Get.back();
               controller.deleteAndGoBack();
             },
             child: const Text(

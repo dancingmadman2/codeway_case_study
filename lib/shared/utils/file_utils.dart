@@ -1,8 +1,3 @@
-String generateFileName(String prefix, String extension) {
-  final timestamp = DateTime.now().millisecondsSinceEpoch;
-  return '${prefix}_$timestamp.$extension';
-}
-
 String formatFileSize(int bytes) {
   if (bytes < 1024) {
     return '$bytes B';
