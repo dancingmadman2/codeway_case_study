@@ -1,0 +1,53 @@
+name: codeway_img_proc
+description: "Image processing app - auto-detects face vs document content and applies appropriate pipeline."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  get: ^4.6.6
+
+  # ML Kit
+  google_mlkit_face_detection: ^0.13.2
+  google_mlkit_text_recognition: ^0.15.1
+
+  # Camera & Image Picking
+  camera: ^0.12.0
+  image_picker: ^1.1.2
+
+  # Image Processing
+  image: ^4.5.4
+  opencv_dart: ^2.2.0
+
+  # PDF
+  pdf: ^3.11.1
+
+  # Local Storage
+  hive_ce: ^2.8.0
+  hive_ce_flutter: ^2.1.0
+
+  # Sensors
+  sensors_plus: ^6.1.1
+
+  # File System & Utils
+  path_provider: ^2.1.4
+  permission_handler: ^12.0.1
+  share_plus: ^12.0.1
+  open_filex: ^4.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  hive_ce_generator: ^1.11.1
+  build_runner: ^2.12.2
+
+flutter:
+  uses-material-design: true
